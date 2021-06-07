@@ -16,15 +16,15 @@ Except the Quadro it should be all standard setup.
 # Notes
 I have updated the BIOS to latest using freedos and firmware from FUJITSU support site.
 
-Overall i just followed the (opencore install guide)[https://dortania.github.io/OpenCore-Install-Guide/] and post-instal at Dortania.
+Overall i just followed the [opencore install guide](https://dortania.github.io/OpenCore-Install-Guide/) and post-instal at Dortania.
 
 ## GPU
-By default the machine uses intel iGPU and it worked for me to install everything. I had issues with multiple monitors with it though. The igpu in there is Intel P530 its even mentioned in (Opencore Skylake guide)[https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#deviceproperties] that it's not natively supported by OSX but you can get it working with some work.
+By default the machine uses intel iGPU and it worked for me to install everything. I had issues with multiple monitors with it though. The igpu in there is Intel P530 its even mentioned in [Opencore Skylake guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#deviceproperties) that it's not natively supported by OSX but you can get it working with some work.
 
 I had Quadro lying around and that is just natively supported. It fits there perfectly but watch out for bigger cards they will be too long.
 
 ## EFI Drives not showing in BIOS
-For some reason the USB drive would show up but internal drives wont. I followed (this guide) [https://www.reddit.com/r/hackintosh/comments/fj3zrj/booting_opencore_without_the_usb_on_an_asrock/] ive also copied same guide into `efi-fix-guide-backup.md` in this repo.
+For some reason the USB drive would show up but internal drives wont. I followed [this guide](https://www.reddit.com/r/hackintosh/comments/fj3zrj/booting_opencore_without_the_usb_on_an_asrock/) ive also copied same guide into `efi-fix-guide-backup.md` in this repo.
 It's pretty easy you just create some boot records on the drives manually with linux. Ubuntu live usb has required tools included.
 
 ## XHCI-unsupported
